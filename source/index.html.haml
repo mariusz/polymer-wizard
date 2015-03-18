@@ -1,7 +1,15 @@
 - content_for(:components) do
   %link{:rel => "import", :href => "/components/onboarding-window.html"}
 
-.container{:layout => "", :vertical => "", :center => ""}
+.container
   %onboarding-window
-    %h2 How does this work?
-    %p Lorem ipsum dolor sit amet
+    %core-animated-pages{:fit => "", :selected => "1", :transitions => "slide-from-right"}
+      %onboarding-step
+        %h2 Step 1
+        %p Lorem ipsum dolor sit amet
+      %onboarding-step
+        %h2 Step 2
+        %p Lorem ipsum dolor sit amet
+      %onboarding-step
+        %h2 Step 3
+        %p Lorem ipsum dolor sit amet  }

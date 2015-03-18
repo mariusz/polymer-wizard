@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.5"
+    "polymer": "Polymer/polymer#~0.5.5",
+    "core-animated-pages": "Polymer/core-animated-pages#~0.5.5"
   }
 }

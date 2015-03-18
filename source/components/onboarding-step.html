@@ -1,0 +1,19 @@
+<link rel="import" href="/javascripts/components/polymer/polymer.html">
+
+<polymer-element name="onboarding-step">
+  <template> 
+    <link rel="stylesheet" href="/stylesheets/components/onboarding-step.css">
+
+    <div class="onboarding__step">
+      <div class="onboarding__step__header">
+        <content select="h2"></content>
+      </div>
+      <div class="onboarding__step__content">
+        <content></content>
+      </div>
+    </div>
+  </template>
+  <script>
+    Polymer();
+  </script>
+</polymer-element>

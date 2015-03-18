@@ -1,39 +1,17 @@
----
-layout: false
----
-
 <link rel="import" href="/javascripts/components/polymer/polymer.html">
+<link rel="import" href="/javascripts/components/core-animated-pages/core-animated-pages.html">
 
 <polymer-element name="onboarding-window" noscript>
   <template>
-    <style>
-      :host {
-        position: relative;
-        background-color: white;
-        padding: 20px;
-        border: 1px solid #ddd;
-        font-family: "Lato", sans-serif;
-      }
+    <link rel="stylesheet" href="/stylesheets/components/onboarding-window.css">
 
-      .omboarding__header {
-        margin-bottom: 10px;
-      }
-
-      polyfill-next-selector { content: '.onboarding__header h2';}
-      .onboarding__header ::content h2 {
-        font-size: 2em;
-      }
-    </style>
-
-    <div class="onboarding__header">
-      <content select="h2"></content>
-    </div>
-    <div class="onboarding__content">
-      <content></content>
+    <div class="onboarding__window" layout vertical center>
+      <shadow></shadow>
     </div>
 
     <script>
-      Polymer({});
+      this.currentStep = 1;
+
     </script>
   </template>
 </polymer-element>
