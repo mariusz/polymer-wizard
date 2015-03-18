@@ -15,6 +15,6 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.5.5",
-    "core-animated-pages": "Polymer/core-animated-pages#~0.5.5"
+    "core-pages": "Polymer/core-pages#~0.5.5"
   }
 }

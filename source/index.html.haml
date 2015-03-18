@@ -1,15 +1,16 @@
 - content_for(:components) do
+  %link{:rel => "import", :href => "/javascripts/components/core-pages/core-pages.html"}
   %link{:rel => "import", :href => "/components/onboarding-window.html"}
 
-.container
-  %onboarding-window
-    %core-animated-pages{:fit => "", :selected => "1", :transitions => "slide-from-right"}
-      %onboarding-step
-        %h2 Step 1
-        %p Lorem ipsum dolor sit amet
-      %onboarding-step
-        %h2 Step 2
-        %p Lorem ipsum dolor sit amet
-      %onboarding-step
-        %h2 Step 3
-        %p Lorem ipsum dolor sit amet  }
+%div{:layout => "", :vertical => "", "center-center" => "", :fit => ""}
+  %core-pages{:class => "onboarding__window", :selected => "0"}
+    %onboarding-step{:layout => "", :vertical => "", "center-center" => ""}
+      %h2 Step 1
+      %p Lorem ipsum dolor sit amet
+    %onboarding-step{:layout => "", :vertical => "", "center-center" => ""}
+      %h2 Step 2
+      %p Lorem ipsum dolor sit amet
+    %onboarding-step{:layout => "", :vertical => "", "center-center" => ""}
+      %h2 Step 3
+      %p Lorem ipsum dolor sit amet
+  %button.button Next step
