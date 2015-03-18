@@ -1,0 +1,19 @@
+{
+  "name": "a9s-onboarding-prototype",
+  "version": "0.0.0",
+  "authors": [
+    "Mariusz Ciesla <mariusz@dotmariusz.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/javascripts/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5"
+  }
+}
