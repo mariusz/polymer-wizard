@@ -1,0 +1,39 @@
+---
+layout: false
+---
+
+<link rel="import" href="/javascripts/components/polymer/polymer.html">
+
+<polymer-element name="onboarding-window" noscript>
+  <template>
+    <style>
+      :host {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        font-family: "Lato", sans-serif;
+      }
+
+      .omboarding__header {
+        margin-bottom: 10px;
+      }
+
+      polyfill-next-selector { content: '.onboarding__header h2';}
+      .onboarding__header ::content h2 {
+        font-size: 2em;
+      }
+    </style>
+
+    <div class="onboarding__header">
+      <content select="h2"></content>
+    </div>
+    <div class="onboarding__content">
+      <content></content>
+    </div>
+
+    <script>
+      Polymer({});
+    </script>
+  </template>
+</polymer-element>

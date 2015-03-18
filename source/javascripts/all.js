@@ -1,1 +1,1 @@
-//= require_tree .
+//= require components/webcomponentsjs/webcomponents.min

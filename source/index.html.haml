@@ -1,6 +1,7 @@
----
-title: Welcome to Middleman
----
+- content_for(:components) do
+  %link{:rel => "import", :href => "/components/onboarding-window.html"}
 
-.welcome
-  %h1 Middleman is watching
+.container{:layout => "", :vertical => "", :center => ""}
+  %onboarding-window
+    %h2 How does this work?
+    %p Lorem ipsum dolor sit amet
