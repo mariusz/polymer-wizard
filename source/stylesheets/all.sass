@@ -1,4 +1,8 @@
+@import "compass"
 @import "components/onboarding-window"
+
+$button-color: #e4833e
+$button-text-color: #fff
 
 html, body
   width: 100%
@@ -9,3 +13,16 @@ html, body
 
 .button
   margin-top: 2em
+  width: 300px
+  border: none
+  background: $button-color
+  color: $button-text-color
+  font-family: "Lato", sans-serif
+  border-radius: .35em
+  padding: .5em
+  font-weight: bold
+  +box-shadow(0 1px 0 rgba(0,0,0,.5))
+  +transition(all .35s ease)
+
+  &:hover
+    background: lighten($button-color, 5%)

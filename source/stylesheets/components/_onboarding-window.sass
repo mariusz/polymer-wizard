@@ -1,7 +1,21 @@
-.onboarding__window
+core-pages.onboarding__window
   padding: 2em
   border-radius: .35em
   background: #fff
   border: 1px solid #e0e0e0
   width: 50%
   height: 50%
+  +transition(all .5s ease)
+
+  > onboarding-step
+    opacity: 0
+    z-index: auto
+    +transform(translate3d(-100px, 0, 0) scale(0.9))
+    +transition(all .5s ease)
+
+  .core-selected
+    opacity: 1
+    +transform(translateX(0))
+
+    + onboarding-step
+      +transform(translate3d(100px, 0, 0) scale(.9))
