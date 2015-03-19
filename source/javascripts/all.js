@@ -9,10 +9,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var nextSelected = parseInt($pages.selected) + 1;
     var totalPages = $pages.items.length;
 
-    if (nextSelected < totalPages)
+    if (nextSelected < totalPages) {
       $pages.selected = nextSelected;
-    else
+    } else {
       $pages.selected = 0;
+    }
   });
 
 });
